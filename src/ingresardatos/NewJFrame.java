@@ -118,7 +118,7 @@ public class NewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(jtMail.getText().equals("alumno@ulp.com.ar")&& jPasswordField1.getText().equals("12345678")){
             JOptionPane.showMessageDialog(this, "Usted ingreso correctamente a la pagina.");
-        }else{JOptionPane.showMessageDialog(this,"Error al ingresar los datos");}
+        }else{JOptionPane.showMessageDialog(this,"Correo y/o contraseña incorrecto/s");}
             
             
     }//GEN-LAST:event_jButton1ActionPerformed
