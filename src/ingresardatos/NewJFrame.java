@@ -30,38 +30,37 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jtMail = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        JL_titulo = new javax.swing.JLabel();
+        JL_correo = new javax.swing.JLabel();
+        JL_contraseña = new javax.swing.JLabel();
+        JTF_correo = new javax.swing.JTextField();
+        JB_registrar = new javax.swing.JButton();
+        JTF_contraseña = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 40)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Sistema");
+        jPanel1.setBackground(new java.awt.Color(153, 204, 255));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        jLabel2.setText("Ingresar correo");
+        JL_titulo.setFont(new java.awt.Font("Tahoma", 1, 40)); // NOI18N
+        JL_titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        JL_titulo.setText("Sistema");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        jLabel3.setText("Ingresar contraseña");
+        JL_correo.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        JL_correo.setText("Ingresar correo");
 
-        jtMail.setFont(new java.awt.Font("Tahoma", 2, 13)); // NOI18N
-        jtMail.setText("Correo");
-        jtMail.setToolTipText("");
+        JL_contraseña.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        JL_contraseña.setText("Ingresar contraseña");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jButton1.setText("Ingresar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        JTF_correo.setFont(new java.awt.Font("Tahoma", 2, 13)); // NOI18N
+        JTF_correo.setToolTipText("");
+
+        JB_registrar.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        JB_registrar.setText("Registrar");
+        JB_registrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                JB_registrarActionPerformed(evt);
             }
         });
-
-        jPasswordField1.setText("Contraseña");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -71,32 +70,32 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(173, 173, 173)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(JL_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton1)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jtMail)
-                            .addComponent(jPasswordField1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE))))
+                            .addComponent(JB_registrar)
+                            .addComponent(JL_contraseña)
+                            .addComponent(JL_correo)
+                            .addComponent(JTF_correo)
+                            .addComponent(JTF_contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE))))
                 .addContainerGap(202, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JL_titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(JL_correo)
                 .addGap(18, 18, 18)
-                .addComponent(jtMail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JTF_correo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40)
-                .addComponent(jLabel3)
+                .addComponent(JL_contraseña)
                 .addGap(18, 18, 18)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(JTF_contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(53, 53, 53)
-                .addComponent(jButton1)
+                .addComponent(JB_registrar)
                 .addContainerGap(155, Short.MAX_VALUE))
         );
 
@@ -114,14 +113,22 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void JB_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JB_registrarActionPerformed
         // TODO add your handling code here:
-        if(jtMail.getText().equals("alumno@ulp.com.ar")&& jPasswordField1.getText().equals("12345678")){
-            JOptionPane.showMessageDialog(this, "Usted ingreso correctamente a la pagina.");
-        }else{JOptionPane.showMessageDialog(this,"Correo y/o contraseña incorrecto/s");}
+        if(JTF_correo.getText().equals("") || JTF_contraseña.getText().equals("")) {
+            JOptionPane.showMessageDialog(this, "Faltan datos por ingresar.");
+        } else {
+            if(JTF_correo.getText().equals("alumno@ulp.com.ar")&& JTF_contraseña.getText().equals("12345678")){
+                JOptionPane.showMessageDialog(this, "Usted ingreso correctamente al sistema.");
+                JTF_correo.setText("");
+                JTF_contraseña.setText("");
+            }else{
+                JOptionPane.showMessageDialog(this,"Correo y/o contraseña incorrecto/s");
+            }
+        }
+        
             
-            
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_JB_registrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,12 +166,12 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton JB_registrar;
+    private javax.swing.JLabel JL_contraseña;
+    private javax.swing.JLabel JL_correo;
+    private javax.swing.JLabel JL_titulo;
+    private javax.swing.JPasswordField JTF_contraseña;
+    private javax.swing.JTextField JTF_correo;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jtMail;
     // End of variables declaration//GEN-END:variables
 }
